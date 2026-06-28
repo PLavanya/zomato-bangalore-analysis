@@ -1,9 +1,5 @@
 # Zomato Bangalore Restaurant Analysis
 
-> **Status:** Analysis complete — Tableau dashboard in progress
-
----
-
 ## Business Problem
 
 Zomato's Business Development team needs a data-driven market overview of Bangalore's restaurant landscape to:
@@ -195,25 +191,41 @@ After filtering locations with < 100 restaurants (unreliable sample), top opport
 
 ```
 zomato-bangalore-analysis/
-├── zomato_analysis.ipynb     → Complete analysis notebook
-├── data/
-│   ├── zomato.csv            → Raw dataset (Kaggle)
-│   ├── zomato_location_metrics.csv   → Location summary for Tableau
-│   ├── zomato_cuisine_filtered.csv   → Cuisine data for Tableau
-│   └── zomato_main.csv       → Clean main data for Tableau
-├── README.md
-└── dashboard/
-    └── tableau_link.txt      → Tableau Public link (coming soon)
-```
+├── zomato_analysis.ipynb              → Complete analysis notebook
+├── README.md                          → This file
+├── zomato_location_metrics.csv        → Location summary (Tableau)
+├── zomato_cuisine_filtered.csv        → Cuisine heatmap data (Tableau)
+├── zomato_cost_location.csv           → Cost by location (Tableau)
+├── zomato_rest_type.csv               → Rest type distribution (Tableau)
+└── zomato_main.csv                    → Clean main data (Tableau KPIs)
 
----
+Raw Dataset: Available on Kaggle — search "Zomato Bangalore Restaurants"
+
+Dashboard
+
+Tableau Public: Zomato Bangalore Restaurant Market Intelligence Dashboard
+
+Dashboard includes:
+
+https://public.tableau.com/app/profile/lavanya.prathipati/viz/ZomatoBangaloreRestaurantanalysis/Dashboard1?publish=yes
+
+4 KPI cards: Total restaurants, Avg rating, Avg cost, Online ordering %
+Supply analysis: Top 10 locations by restaurant count
+Demand analysis: Top 10 locations by avg votes
+Opportunity: Top 10 locations by demand-supply ratio
+Cuisine heatmap: Top 10 cuisines × Top 10 opportunity locations
+Cost analysis: Avg cost per opportunity location
+Rest type distribution: Fine Dining gap visualised
+Listed type distribution: Delivery vs Dine-out breakdown
+Recommendations panel: 3 actionable BD team insights
 
 ## Analysis Sections
 
-- [x] Data Understanding
-- [x] Data Cleaning
-- [x] Univariate Analysis
-- [x] Bivariate Analysis (Demand-Supply Ratio + Cuisine Heatmap + Cost Analysis)
-- [x] Statistical Testing (T-test: Online Ordering vs Rating)
-- [x] Business Recommendations
-- [ ] Tableau Dashboard (in progress)
+ Data Cleaning
+ Univariate Analysis
+ Bivariate Analysis
+ Demand-Supply Ratio Framework
+ Cuisine Gap Analysis
+ Statistical Testing (T-test)
+ Business Recommendations
+ Tableau Dashboard Published
